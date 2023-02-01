@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    body {
+    -webkit-user-select:none;
+    -webkit-touch-callout:none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+  }
+  </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Title -->
+    <title>弘光查詢系統 (TG群)</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="./img/core-img/favicon.png">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <!-- /Preloader -->
+
+    <!-- Top Search Form Area -->
+    <div class="top-search-area">
+        <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <!-- Close -->
+                        <button type="button" class="btn close-btn" data-dismiss="modal"><i class="ti-close"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header Area Start -->
+    <header class="header-area">
+        <!-- Main Header Start -->
+        <div class="main-header-area">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Classy Menu -->
+                    <nav class="classy-navbar justify-content-between" id="alimeNav">
+
+                        <!-- Logo -->
+                        <a class="nav-brand" href="./index.html"><img src="./img/core-img/logo.png" alt=""></a>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+                            <!-- Menu Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul id="nav">
+                                    <li><a href="./index.html">首頁</a></li>
+                                    <li><a href="./about.html">關於</a></li>
+                                    <li><a href="./guide.html">教學</a></li>
+                                    <li class="active"><a href="./datain.html">資料查詢</a></li>
+                                </ul>
+                            </div>
+                            <!-- Nav End -->
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Area End -->
+
+    <!-- Breadcrumb Area Start -->
+    <section class="breadcrumb-area bg-img bg-overlay jarallax" style="background-image: url(img/bg-img/f1.jpg);">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12">
+                    <div class="breadcrumb-content text-center">
+                        <h2 class="page-title">個人資料查詢</h2>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb justify-content-center">
+                                <li class="breadcrumb-item"><a href="index.html"><i class="icon_house_alt"></i> 首頁</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">資料查詢</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb Area End -->
+
+    <!-- Contact Area Start -->
+    <div class="contact-area section-padding-80-50">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <h2 class="contact-title mb-30">弘光<br>資料查詢系統</h2>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <!-- Inquiry Info -->
+                    <div class="contact-info mb-30">
+                        <p style="font-weight:600;">說明</p>
+                        <a href="#">僅供查詢個人資料</a>
+                    </div>
+                    <!-- Inquiry Info -->
+                    <div class="contact-info mb-30">
+                        <p style="font-weight:600;">啟用時間</p>
+                        <a href="#" style="font-weight:400;">2023/2</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <!-- Inquiry Info -->
+                    <div class="contact-info mb-30">
+                        <p style="font-weight:600;">教學</p>
+                        <a href="./guide.html">按我查詢</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact Area End -->
+
+    <!-- Map Area Start -->
+    <div class="map-area section-padding-0-80">
+        <div class="container">
+            <div id="map">
+				<form action="https://script.google.com/macros/s/AKfycbyUfJcP_-MYn7M294jXETkBk9Cc5mhhI5Qq2gDUQCZX1RZ1n4WvYsxPj4MQLFYhPQVW/exec" class="login-form mt-2" method="post" target="_top">
+					<div class="form-group">
+              			<label for="classNum">社群代碼</label>
+              			<input type="text" class="form-classNum form-control" placeholder="請輸入社群代碼" name="classNum">
+            		</div>
+            		<div class="form-group">
+              			<label for="seatNum">社群編號</label>
+              			<input type="text" class="form-seatNum form-control" placeholder="請輸入社群編號" name="seatNum">
+            		</div>
+            		<div class="form-group">
+              			<label for="password">信箱</label>
+              			<input type="email" class="form-password form-control" placeholder="請輸入信箱" name="password">   
+            		</div>
+            		<button type="submit" class="btn btn-primary">送出查詢</button>
+          		</form>
+            </div>
+        </div>
+    </div>
+    <!-- Map Area End -->
+
+    <!-- Footer Area Start -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-content d-flex align-items-center justify-content-between">
+                        <!-- Copywrite Text -->
+                        <div class="copywrite-text">
+                            <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> <b>HK Team</b> All rights reserved.</p>
+                        </div>
+                        <!-- Footer Logo -->
+                        <div class="footer-logo">
+                            <a href="#"><img src="img/core-img/logo2.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Area End -->
+
+    <!-- **** All JS Files ***** -->
+    <!-- jQuery 2.2.4 -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Popper -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- All Plugins -->
+    <script src="js/alime.bundle.js"></script>
+    <!-- Active -->
+    <script src="js/default-assets/active.js"></script>
+
+</body>
+
+</html>

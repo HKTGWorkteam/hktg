@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script type="text/javascript">
+    function iEsc(){ return false; }
+    function iRec(){ return true; }
+    function DisableKeys() {
+      if(event.ctrlKey || event.shiftKey || event.altKey) {
+        window.event.returnValue=false;
+        iEsc();}
+      }
+        document.ondragstart=iEsc;
+        document.onkeydown=DisableKeys;
+        document.oncontextmenu=iEsc;
+      if (typeof document.onselectstart !="undefined")
+        document.onselectstart=iEsc;
+    else{
+        document.onmousedown=iEsc;
+        document.onmouseup=iRec;
+    }
+    function DisableRightClick(qsyzDOTnet){
+      if (window.Event){
+      if (qsyzDOTnet.which == 2 || qsyzDOTnet.which == 3)
+        iEsc();}
+      else
+      if (event.button == 2 || event.button == 3){
+        event.cancelBubble = true
+        event.returnValue = false;
+        iEsc();}
+    }
+  </script>
+  <style>
+    body {
+    -webkit-user-select:none;
+    -webkit-touch-callout:none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+  }
+  </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Title -->
+    <title>弘光查詢系統 (TG群)</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="./img/core-img/favicon.png">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <!-- /Preloader -->
+
+    <!-- Top Search Form Area -->
+    <div class="top-search-area">
+        <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <!-- Close -->
+                        <button type="button" class="btn close-btn" data-dismiss="modal"><i class="ti-close"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header Area Start -->
+    <header class="header-area">
+        <!-- Main Header Start -->
+        <div class="main-header-area">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Classy Menu -->
+                    <nav class="classy-navbar justify-content-between" id="alimeNav">
+
+                        <!-- Logo -->
+                        <a class="nav-brand" href="./index.html"><img src="./img/core-img/logo.png" alt=""></a>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+                            <!-- Menu Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul id="nav">
+                                    <li class="active"><a href="./index.html">首頁</a></li>
+                                    <li><a href="./about.html">關於</a></li>
+                                    <li><a href="./guide.html">教學</a></li>
+                                    <li><a href="./datain.html">資料查詢</a></li>
+                                </ul>
+                            </div>
+                            <!-- Nav End -->
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Area End -->
+
+    <!-- Welcome Area Start -->
+    <section class="welcome-area">
+        <div class="welcome-slides owl-carousel">
+            <!-- Single Slide -->
+            <div class="single-welcome-slide bg-img bg-overlay" style="background-image: url(img/bg-img/f1.jpg);">
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <!-- Welcome Text -->
+                        <div class="col-12 col-lg-8 col-xl-6">
+                            <div class="welcome-text">
+                                <h2 data-animation="bounceInDown" data-delay="900ms">歡迎來到 <br>弘光查詢系統</h2>
+                                <p data-animation="bounceInDown" data-delay="500ms">歡迎使用 <b>弘光查詢系統</b> 查詢您的個人訊息，任何地方只要有網路及資料，均可以使用，無須受限！</p>
+                                <div class="hero-btn-group" data-animation="bounceInDown" data-delay="100ms">
+                                    <a href="#" class="btn alime-btn mb-3 mb-sm-0 mr-4">來吧！</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single Slide -->
+            <div class="single-welcome-slide bg-img bg-overlay" style="background-image: url(img/bg-img/f2.jpg);">
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <!-- Welcome Text -->
+                        <div class="col-12 col-lg-8 col-xl-6">
+                            <div class="welcome-text">
+                                <h2 data-animation="bounceInUp" data-delay="100ms">歡迎來到 <br>弘光查詢系統</h2>
+                                <p data-animation="bounceInUp" data-delay="500ms">歡迎使用 <b>弘光查詢系統</b> 查詢您的個人訊息，任何地方只要有網路及資料，均可以使用，無須受限！</p>
+                                <div class="hero-btn-group" data-animation="bounceInUp" data-delay="900ms">
+                                    <a href="#" class="btn alime-btn mb-3 mb-sm-0 mr-4">來吧！</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Welcome Area End -->
+
+
+
+
+    <!-- Footer Area Start -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-content d-flex align-items-center justify-content-between">
+                        <!-- Copywrite Text -->
+                        <div class="copywrite-text">
+                            <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> <b>HK Team</b> All rights reserved.</p>
+                        </div>
+                        <!-- Footer Logo -->
+                        <div class="footer-logo">
+                            <a href="#"><img src="img/core-img/logo2.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Area End -->
+
+    <!-- **** All JS Files ***** -->
+    <!-- jQuery 2.2.4 -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Popper -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- All Plugins -->
+    <script src="js/alime.bundle.js"></script>
+    <!-- Active -->
+    <script src="js/default-assets/active.js"></script>
+
+</body>
+
+</html>
