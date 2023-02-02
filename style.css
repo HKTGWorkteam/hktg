@@ -60,6 +60,11 @@ img {
   max-height:21px;
 }
 
+.imgicon{
+  max-width:32px;
+  max-height:32px;
+}
+
 ul {
   margin: 0;
   padding: 0; }
