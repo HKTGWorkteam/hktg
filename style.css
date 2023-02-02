@@ -55,6 +55,11 @@ img {
   width: 100%;
   height: auto; }
 
+.imgp{
+  max-width:82px;
+  max-height:21px;
+}
+
 ul {
   margin: 0;
   padding: 0; }
